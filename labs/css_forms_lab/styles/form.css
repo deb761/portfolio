@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+form {
+	width: 850px;
+}
+
+fieldset {
+	border: solid #ff9900 1px;
+	width: 25em;
+	margin-bottom: 1em;
+	padding: 10px;
+}
+
+legend {
+	color: #084048;
+	background-color: #B3E2E0;
+	border: 1px Solid #FF9900;
+	padding: 5px 10px;
+}
+
+textarea {
+	font: inherit;
+	width: 25em;
+}
+
+input.submit {
+	border: none;
+	width: 136px;
+	height: 65px;
+	color: #084048;
+	font-size: 12pt;
+	float: left;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+	padding: 3px 6px;
+	vertical-align: middle;
+}
+
+label input {
+	margin: 5px 10px;
+	font: inherit;
+}
+
+#personal_data input {
+	width: 15em;
+	color: #084048;
+	background-color: #B3E2E0;
+	border: 1px solid #FF9900;
+}
+
+#personal_data, #legal_issues {
+	float: left;
+}
+
+#current_help {
+	float: right;
+}
+
+#content:after {
+	clear: both;
+}
+
+.submit {
+	background-image: url(../images/nav_background.gif);
+	padding: 0;
+	margin: 0 0 0 5em;
+	display: block;
+	width: 136px;
+	height: 65px;
+	border-width: 0;
+}
+
+.submit:hover {
+	background-image: url(../images/nav_background_flip.gif);
+}

@@ -1,0 +1,177 @@
+html {
+    color: black;
+    background-color: black;
+    font-family: Georgia, "Times New Roman", Times, Serif;
+}
+
+body {
+    width: auto;
+    background-color: white;
+    margin: 5px;
+}
+
+p, h1, h2 {
+    padding-bottom: .8em;
+}
+
+section ul li {
+    list-style-type: disc;
+    padding-bottom: .1em;
+    margin-left: 15pt;
+}
+
+section ul {
+	padding-bottom: 1em;
+}
+
+
+/* Link formatting */
+a:link {
+    color: #084048;
+}
+
+a:visited {
+    color: #10A7A5;
+}
+
+a:hover {
+    color: #CC3300;
+}
+
+/* Detailed lists */
+dt {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #CC3300;
+    margin: 5pt;
+}
+
+dd {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+/* Header Section */
+header {
+	padding-top: 50px;
+	padding-left: 250px;
+	background: url(../images/przlogo.gif) no-repeat 0 40px;
+}
+header h1,h2,h3,h4,h5,h6{
+    font-family: Garamond, serif;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.6em;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Nav section */
+nav {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: -1px;
+	color: #252550;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav:before,
+nav:after {
+    content: " ";
+    display: table;
+}
+
+nav:after {
+    clear: both;
+}
+nav ol {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+    float: left;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-right: solid;
+    border-width: thin;
+}
+
+section#content {
+	padding: 20px;
+	background-image: url(../images/prz_watermark.gif);
+	background-position: right center;
+    background-repeat: no-repeat;
+}
+
+section#content h1,h2,h3,h4,h5,h6 {
+    font-family: "Gil Sans", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+section#content h1 {
+    font-size: 1.5em;
+}
+
+#content h2 {
+    font-size: 1.3em;
+}
+
+#content h3 {
+    font-size: 1.1em;
+}
+
+.bigger {
+    font-size: 1.1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.bigger li {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#content ol {
+    list-style-type: upper-roman;
+    padding-bottom: .8em;
+	padding-left: 1.5em;
+	margin-left: 1em;
+	list-style-position: outside;
+}
+
+#content ol li {
+	padding-left: 0.5em;
+}
+
+#content ol ol {
+    list-style-type: lower-alpha;
+}
+
+/* End Note Section */
+footer {
+    background-color: #A1D1D1;
+    padding: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.1em;
+    margin: 0;
+    padding: 0;
+}

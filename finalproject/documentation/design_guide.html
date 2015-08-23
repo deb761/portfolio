@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link rel="stylesheet" type="text/css" href="../../styles/format.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/layout.css">
+    <title>Seahorse Design Guide</title>
+    <style> 
+        pre { 
+            font-size: 90%;
+            font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+            display: inline; 
+            color: #555555;
+        }
+        .inset {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-width: thin;
+            padding: 1em;
+        }
+		.card {
+			width: 47px;
+		}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Seahorse Development Guide</h1>
+        <ul id="social">
+            <li><a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="../../images/FB-f-Logo__blue_29.png" alt="Facebook"/></a></li>
+            <li><a id="linkedin" href="https://www.linkedin/in/deborah.engelmeyer"><img src="../../images/In-2C-28px-TM.png" alt="LinkedIn"/></a></li>
+        </ul>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../../learnings/index.html">Learnings</a></li>
+        <li><a href="../../labs/index.html">Labs</a></li>
+        <li><a href="../../projects/index.html">Projects</a></li>
+        <li><a href="../../documentation/index.html">Documentation</a></li>
+        <li><a href="../index.html">Final Project</a></li>
+    </ul>
+    </nav>
+    <section id="content">
+    	<h2>Layout or Storyboard</h2>
+        <img src="../../images/wireframe.png" alt="layout" class="photo-full">
+        <h2>Color Palette</h2>
+        <p>These are the colors used in the website.  Tints or changes in opacity may also be used as long as they don't clash.</p>
+        <table>
+          <caption>Color Palette</caption>
+          <tr>
+            <th>Description</th>
+            <th>Hex Code</th>
+            <th class="card">Appearance</th>
+          </tr>
+          <tr>
+            <td>Border color for the entire page</td>
+            <td>#C32A2A</td>
+            <td class="card" style="background-color: #C32A2A">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Background color for page, also the text color for the letterhead</td>
+            <td>#EFEFEF</td>
+            <td style="background-color: #EFEFEF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Background color for Nav section</td>
+            <td>#E8E4EB</td>
+            <td style="background-color: #E8E4EB">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Main text color and also the shadow for the h1, h2, and h3 elements</td>
+            <td>black</td>
+            <td style="background-color: black">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Main heading color</td>
+            <td>#003763</td>
+            <td style="background-color: #003763">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Top border for the footer</td>
+            <td>#2727D6</td>
+            <td style="background-color: #2727D6">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Another color</td>
+            <td>#2E0805</td>
+            <td style="background-color: #2E0805">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Another color</td>
+            <td>#7979EA</td>
+            <td style="background-color: #7979EA">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Another color</td>
+            <td>#969696</td>
+            <td style="background-color: #969696">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Another color</td>
+            <td>#A60D0D</td>
+            <td style="background-color: #A60D0D">&nbsp;</td>
+          </tr>
+        </table>
+        <article>
+        <h2>Style Guide</h2>
+        <h3>Overall Layout</h3>
+        <p>The overall layout of the pages has a header section followed by a member sign-in, then a site menu, followed by the page content.  That is how the pages are ordered without CSS formatting and appear on small screens.</p>
+      <p>As the page gets wider, the login is moved to the top right corner, and the content is moved to the right of the site menu, as seen in the layout sketch.  The floats are controlled with the <em>clear-fix</em> class.</p>
+      <div class="border inset">
+            <pre>.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+</pre>
+		</div>
+        
+      <h3>Overall Styles</h3>
+        <div class="border inset">
+            <pre>html {
+    background-color: #C32A2A;
+}
+
+body {
+    background-color: #EFEFEF;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 2%;
+    font-family: tahoma, arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.2em;
+}
+            </pre>
+        </div>
+        <p>The <em>html</em> style sets the background color to a deep red, and the <em>body</em> style sets the
+        background color to light gray, with a width of 90% of the page, so it has the effect of a red border
+        around a light gray document.</p>
+        <p>The <em>body</em> style also defines the base font for the pages to tahoma and sets the size to
+          1.2 times larger than the default.</p>
+        
+        <div class="border inset">
+            <pre>.member {
+    visibility: hidden;
+}
+            </pre>
+		</div>
+        <p>The <em>member</em> class is used to control visibility of elements that are accessed by members only.</p>
+        <div class="border inset">
+            <pre>h1, h2, h3 {
+    font-family: "Times New Roman", Georgia, serif;
+    letter-spacing: .1em;
+    color: #003763; /* dark navy */
+    text-shadow: 1px 1px black;
+            </pre>
+		</div>
+        <p>The header font is set to a dark navy and a serif font.</p>
+        <h3>Letterhead</h3>
+        <div class="border inset">
+            <pre>#letterhead {
+	display: inline-block;
+}
+
+#letterhead h1,h2,h3 {
+	color: #C32A2A;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#letterhead h2 {
+	font-size: .9em;
+}
+</pre>
+	</div>
+    <p>The letterhead section contains the club logo and name.  The font color for the h1, h2, and h3 elements is changed to match the main color of the logo, and positioned relative to the header, as seen in the CSS from the section for displays wider than 650 pixels.</p>
+    <div class="border inset">
+            <pre>header {
+    position: relative;
+}
+
+#letterhead {
+    position: absolute;
+    top: 60px;
+    left: 255px;
+}
+</pre>
+		</div>
+        <h3>Login</h3>
+		<div class="border inset">
+            <pre>#login {
+	font-size: .7em;
+	border: solid thin;
+	background-color: #B6B6B6;
+	width: 16em;
+}
+
+#login h2 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	text-shadow: none;
+	text-align: center;
+}
+
+#login label {
+	cursor: pointer;
+	display: inline-block;
+	width: 65px;
+	text-align: right;
+}
+
+#login input {
+	font-size: inherit;
+	width: 10em;
+	padding-right: 2px;
+}
+</pre>
+		</div>
+        <p>The login uses a Gotham font that is 0.7em smaller than the body text.  The login element is a form, and its labels and inputs are set to a fixed width that is just large enough for the text within.  CSS does not allow using relative units for labels.  The labels are also right-aligned.</p>
+        <h3>Navigation</h3>
+        <div class="border inset">
+            <pre>#mainNav {
+    margin-right: 1em;
+    width: 200px;
+    background-color: #E8E4EB;
+    border: 1px solid #4F547C;
+}
+
+#mainNav ol, #social ul {
+	list-style-type: none;
+	margin: 0.5em 1em;
+	padding: 0;
+}
+
+/* Shift the image over a tad so it fits nicely in the nav bar */
+#mainNav img {
+	position: relative;
+	left: -1em;
+}
+</pre>
+		</div>
+        <p>The Main Navigation section contains an ordered list of links to the other pages on the site.  The list-style-type is none, and the margins of the list elements are adjusted a bit.  The image that is a link to the membership form is moved a bit to the left so that it centers better in the navigation menu box.  The box is floated to the left when the screen width is larger than 480 pixels.</p>
+        <h3>Content</h3>
+        <div class="border inset">
+            <pre>#content {
+    width: 60%;
+    float: left;
+}
+</pre>
+		</div>
+        <p>The content section is set to 60% of the page width and floated left to be beside the Main Navigation section when the page width is at least 650 pixels.  The content section inherits the black text and the light gray background of the body.</p>
+        <h3>Footer</h3>
+        <div class="border inset">
+            <pre>footer {
+	background-color: #eee;
+	font-size: .7em;
+	text-align: center;
+	border-top: #0000D4 solid 5px;
+}
+
+footer p {
+	margin: 0;
+}
+</pre>
+		</div>
+        <p>The footer is set off from the body using a blue border with a color picked from the logo.  The background is set to a darker gray than the body, and the font size is set to 0.7em and aligned center.  The margins of the paragraph elements are set to 0 to eliminate spacing between them.</p>
+        </article>
+      <h2>Media Assets</h2>
+        <p>Images are used with permission from club members.</p>
+        <p>Images are optimized as JPG using Photoshop or GIMP Save for the Web to determine the best settings.
+    </section>
+    <footer>
+        <hr class="border">
+        <p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+html {
+    background-color: #77aaee; /* light blue */
+}
+
+body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 2%;
+    background: #eeddcc; /* light tan */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+        color: #445544;
+}
+
+main {
+        float: left;
+        width: 60%;
+        margin: 1em;
+}
+
+aside {
+    float: right;
+    margin: 1em;
+}
+
+.see-through {
+    opacity: 0.8;
+    float: left;
+    margin: 2em;
+}
+
+.border {
+    border-style: ridge;
+    border-width: thick;
+    border-color: blue;
+}
+
+footer {
+    clear: both;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.slant {
+    font-style: italic;
+}
+
+/* Clearfix class to handle floating elements */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Table styles */
+table, th, td {
+    border-style: groove;
+}
+
+th, td {
+	padding: 15px;
+}
+
+caption {
+	font-weight: bold;
+}
+
+/* Bibliography styles */
+ol.biblio {
+	list-style: none;
+}
+
+ol.biblio li {
+    padding-bottom: .8em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+

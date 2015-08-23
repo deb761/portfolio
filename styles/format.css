@@ -1,0 +1,126 @@
+/* Overall formatting */
+html {
+    background-color: #77aaee; /* light blue */
+}
+
+body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 2%;
+    background: #eeddcc; /* light tan */
+    font-family: Arial, Helvetica, sans-serif;
+	color: #253034; /* nearly black with a hint of green */
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+        color: #445544; /* dark forest green */
+		text-shadow: 1px 1px #253034; /* same as main text */
+}
+
+/* link formatting */
+a:link {
+	color: #6688bb;
+}
+
+a:visited {
+	color: #77aaee;
+}
+
+a:focus {
+	color: #58749B;
+}
+
+a:hover {
+	color: #6699bb;
+}
+
+a:active {
+	color: #627EA2;
+}
+
+/* Content formatting */
+section#content {
+        float: left;
+        width: 70%;
+        margin: 1em;
+}
+
+section#content:before,
+section#content:after {
+    content: " ";
+    display: table;
+}
+
+section#content:after {
+    clear: both;
+}
+
+/* Navigation formatting */
+nav {
+    float: right;
+    margin: 1em;
+    width: 20%;
+    background-color: #E8E4EB;
+    border: 1px solid #4F547C;
+}
+
+/* Footer formatting */
+footer {
+    clear: both;
+	font-size: 0.9em;
+}
+
+.see-through {
+    opacity: 0.8;
+    float: left;
+	margin:0em 2em 2em 0em;
+}
+
+.border {
+    border-style: ridge;
+    border-width: thick;
+    border-color: #58749B;
+}
+
+.bold, strong {
+    font-weight: bold;
+}
+
+.slant {
+    font-style: italic;
+}
+
+/* dl formatting */
+dt {
+	color: #445544; /* dark forest green */
+	font-style: italic;
+}
+
+/* table formatting */
+table, th, td {
+    border-style: groove;
+	border-color: #58749B;
+}
+
+th, td {
+	padding: 15px;
+}
+
+caption {
+	color: #445544;
+	font-weight: bold;
+}
+
+/* Bibliography formatting */
+ol.biblio {
+	list-style: none;
+}
+
+ol.biblio li {
+    padding-bottom: .8em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+

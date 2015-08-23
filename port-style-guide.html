@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link rel="stylesheet" type="text/css" href="styles/format.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+	<script type="text/javascript" src="http://rouleurderby.com/js/greek.js"></script>
+    <style> 
+        pre { 
+            font-size: 90%;
+            font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+            display: inline; 
+            color: #555555;
+        }
+        .inset {
+            margin-left: 5%;
+            margin-right: 5%;
+            border-width: thin;
+            padding: 1em;
+        }
+    </style>
+    <title>Portfolio Style Guide</title>
+</head>
+
+<body>
+    <header>
+        <h1>Debbie's Home Page</h1>
+        <ul id="social">
+            <li><a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="images/FB-f-Logo__blue_29.png" alt="Facebook"/></a></li>
+            <li><a id="linkedin" href="https://www.linkedin/in/deborah.engelmeyer"><img src="images/In-2C-28px-TM.png" alt="LinkedIn"/></a></li>
+        </ul>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learnings/index.html">Learnings</a></li>
+        <li><a href="labs/index.html">Labs</a></li>
+        <li><a href="projects/index.html">Projects</a></li>
+        <li><a href="documentation/index.html">Documentation</a></li>
+        <li><a href="finalproject/index.html">Final Project</a></li>
+    </ul>
+    </nav>
+    <section id="content">
+    <article>
+        <h2>Overall Document Styles</h2>
+        <div class="border inset">
+            <pre>
+html {
+    background-color: rgb(96,108,136); /* dusky purple */
+}
+        
+body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 2%;
+    background: rgb(243,226,199); /* light tan */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}</pre>
+        </div>
+        <p>The <em>html</em> style sets the background color to a dusky purple, and the <em>body</em> style sets the
+        background color to tan, with a width of 90% of the page, so it has the effect of a purple border
+        around a beige document.</p>
+        <p>The <em>body</em> style also defines the base font for the pades and sets the size to a
+        bit larger than the default.</p>
+    </article>
+    <article>
+        <h2>Content Document Style</h2>
+        <div class="border inset">
+            <pre>
+section#content {
+        float: left;
+        width: 70%;
+        margin: 1em;
+}
+
+section#content:before,
+section#content:after {
+    content: " ";
+    display: table;
+}
+
+section#content:after {
+    clear: both;
+}
+</pre>
+        </div>
+        <p>The <em>content</em> style sets the content section to 70% of the page width, and instructs the
+        browser to float the section to the left of the page.</p>
+    </article>
+    
+    <article>
+        <h2>Nav Document Style</h2>
+        <div class="border inset">
+            <pre>
+nav {
+    float: right;
+    margin: 1em;
+	width: 20%;
+	background-color: #A1B9D1;
+	border: 1px solid #4F547C;
+}
+</pre>
+        </div>
+        <p>The <em>nav</em> style instructs the
+        browser to float the section to the right of the page, changes the background color, and adds a border.</p>
+    </article>
+    
+    <article>
+        <h2>See-Through Class Style</h2>
+        <div class="border inset">
+            <pre>
+.see-through {
+    opacity: 0.8;
+    float: left;
+	margin: 0em 2em 2em 0em;
+}
+</pre>
+        </div>
+        <p>The <em>see-through</em> class style makes the image a bit sheer, puts a border around it,
+        and floats it so that text flows around it to the right.</p>
+    </article>
+
+    <article>
+        <h2>Border Class Style</h2>
+        <div class="border inset">
+            <pre>
+.border {
+    border-style: ridge;
+    border-width: thick;
+    border-color: blue;
+}
+</pre>
+        </div>
+        <p>The <em>border</em> class style puts a blue ridged border around the element.</p>
+    </article>
+
+    <article>
+        <h2>Footer Document Style</h2>
+        <div class="border inset">
+            <pre>
+footer {
+    clear: both;
+	font-size: 0.9em;
+}
+</pre>
+        </div>
+        <p>The <em>footer</em> style clears any left or right float formats that moy have been set so
+        that the footer appears at the bottom of the page when <em>main</em> and <em>aside</em>
+        are used.</p>
+    </article>
+
+    <article>
+        <h2>Table Style</h2>
+        <div class="border inset">
+            <pre>
+table, th, td {
+    border-style: groove;
+	border-color: #6978AF;
+}
+
+th, td {
+	padding: 15px;
+}
+</pre>
+        </div>
+        <p>The <em>table</em> element style specifies a border around any tables so that they are
+        easily identified as tables.</p>
+    </article>
+
+    <article>
+        <h2>OL Biblio Class Style</h2>
+        <div class="border inset">
+            <pre>
+ol.biblio {
+	list-style: none;
+}
+
+ol.biblio li {
+    padding-bottom: .8em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+</pre>
+        </div>
+        <p>The <em>biblio</em> class sets up a hanging indent for the entries and adds some padding between them.</p>
+    </article>
+    </section>
+    <footer>
+        <hr class="border">
+        <p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+    </footer>
+</body>
+</html>

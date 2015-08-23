@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link rel="stylesheet" type="text/css" href="../../styles/format.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/layout.css">
+    <style>
+	ul.dir {
+		list-style-type: none;
+	}
+	li.site {
+		list-style-image: url(../../images/website.png);
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	li.dir {
+		list-style-image: url(../../images/blue_folder.png);
+	}
+	</style>
+	<title>Seahorse Development Guide</title>
+</head>
+
+<body>
+    <header>
+        <h1>Seahorse Development Guide</h1>
+        <ul id="social">
+            <li><a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="../../images/FB-f-Logo__blue_29.png" alt="Facebook"/></a></li>
+            <li><a id="linkedin" href="https://www.linkedin/in/deborah.engelmeyer"><img src="../../images/In-2C-28px-TM.png" alt="LinkedIn"/></a></li>
+        </ul>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../learnings/index.html">Learnings</a></li>
+        <li><a href="../../labs/index.html">Labs</a></li>
+        <li><a href="../../projects/index.html">Projects</a></li>
+        <li><a href="../../documentation/index.html">Documentation</a></li>
+        <li><a href="../index.html">Final Project</a></li>
+    </ul>
+    </nav>
+    <section id="content">
+    	<h2>Site Directory Structure</h2>
+        <p>This site combines information and coordination.</p>
+        <dl>
+        	<dt>Root Directory</dt>
+            <dd>The root directory contains the following files:
+            	<dl>
+                	<dt>index.html</dt>
+                	<dd>Home page for the site, explains the site and club purpose.</dd>
+                	<dt>about.html</dt>
+                	<dd>More information about the club and its members.</dd>
+                	<dt>history.html</dt>
+                	<dd>History of the club.</dd>
+                	<dt>news.html</dt>
+                	<dd>Current news in a blog style, with most recent news first.</dd>
+                	<dt>meetings.html</dt>
+                	<dd>Calendar of meetings.</dd>
+                	<dt>membership.html</dt>
+                	<dd>Explains membership requirements and provides a form to apply for membership.</dd>
+                	<dt>library.html</dt>
+                	<dd>Explains purpose of library and provides a means to reserve materials.</dd>
+                </dl>
+            </dd>
+            <dt>images</dt>
+            <dd>Images shown on the web pages, other than photographs uploaded
+            by members.</dd>
+            <dt>styles</dt>
+            <dd>Style sheet files for the site.</dd>
+            <dt>data</dt>
+            <dd>Club database.</dd>
+        </dl>
+        <h3>Visual Representation of Site Structure</h3>
+        <ul class="dir">
+        	<li class="site">seahorse</li>
+            <li>index.html</li>
+            <li>about.html</li>
+            <li>history.html</li>
+            <li>news.html</li>
+            <li>meetings.html</li>
+            <li>joinus.html</li>
+            <li>library.html</li>
+            <li class="dir">images</li>
+            <li class="dir">styles</li>
+            <li class="dir">data</li>
+        </ul>
+        <h2>Main Navigation</h2>
+        <img src="navigation.png" alt="navigation">
+        <h2>HTML5 Template</h2>
+        <p>The template html with link to format.css can be found <a href="../seahorse/template.html">here</a>.</p>
+        <h2>Wire Frame</h2>
+        <img src="../../images/wireframe.png" alt="wireframe">
+    </section>
+    <footer>
+        <hr class="border">
+        <p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* CSS Formatting Document */
+
+body {
+	color: #000000;
+	background-color: #FFFFFF;
+	font: 12pt Georgia, "Times New Roman", Times, serif;
+}
+
+/* Client Nav section positioning */
+#clientNav {
+	font: 0.7em Arial, Helvetica, sans-serif;
+	border: thin dotted black;
+	background-color: #D7EAE4;
+	margin: 2em;
+}
+
+#clientNav li {
+	float: left;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+

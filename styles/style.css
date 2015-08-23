@@ -1,0 +1,35 @@
+html {
+    background-color: rgb(96,108,136); 
+}
+body {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 2%;
+    background: rgb(243,226,199); /* Old browsers */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#var1 {
+    color: navy;
+}
+
+#var2 {
+    font-family: "Times New Roman", serif;
+}
+
+.color3 {
+    color: #990033;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.slant {
+    font-style: italic;
+}
+
+table {
+    border-style: groove;
+}

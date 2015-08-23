@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Layout Styles */
+
+nav {
+	float: none;
+	width: 9em;
+	margin: 0em;
+	padding: 0;
+}
+
+header {
+	position: relative;
+}
+
+section#content {
+	width: 92%;
+	margin: 1em;
+}
+
+nav ul, #social ul {
+	list-style-type: none;
+	margin: 0.5em 1em;
+	padding: 0;
+}
+
+ul#social a, ul#social li {
+	display: inline-block;
+	padding: 2px;
+}
+
+.photo-full {
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+
+	#social {
+		position: absolute;
+		top: 0px;
+		right: 0;
+	}
+	
+	nav {
+		float: right;
+	}
+	section#content {
+			float: left;
+			width: 50%;
+	}
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 480px. */
+@media only screen and (min-width: 600px) {
+
+	section#content {
+			width: 59%;
+	}
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 480px. */
+@media only screen and (min-width: 800px) {
+
+	section#content {
+			width: 70%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+
+	section#content {
+			width: 75%;
+	}
+}
+/* Print */
+@media only print {
+
+	#social, nav {
+		display: none;
+	}
+	
+	section#content {
+			float: left;
+			width: 90%;
+	}
+}
+
+
+
+
+
